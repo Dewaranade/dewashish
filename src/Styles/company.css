@@ -1,0 +1,140 @@
+.company__container{
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+#company{
+    background-color: rgb(239, 239, 239);
+}
+
+.company__title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+}
+
+.company__image1{
+    height: 80px;
+    width: 80px;
+    justify-self: center;
+
+}
+
+.company__image2{
+    height: 50px;
+    width: 300px;
+    justify-self: center;
+
+}
+
+.company__image34{
+    height: 80px;
+    width: 350px;
+    justify-self: center;
+
+}
+
+.company__image5{
+    height: 80px;
+    justify-self: center;
+
+}
+
+
+.company__info{
+    grid-template-columns: repeat(1, 480px);
+    margin-bottom: var(--mb-3);
+    color: rgb(91, 91, 91);
+    
+}
+
+.company__description{
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2-5);
+    text-align: justify;
+}
+
+@media screen and (max-width: 992px) {
+    .company__container{
+        grid-template-columns:repeat(3,1fr);
+        row-gap: 2.5rem;
+    }
+
+    .company__image1{
+        width: max-content;
+    }
+
+    .company__image2{
+        width: max-content;
+    }
+
+    .company__image34{
+        width: max-content;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+   .company__info{
+    grid-template-columns: repeat(3, 3fr);
+    row-gap: 2.5rem;
+   }
+
+   .company__description{
+    padding: 0;
+   }
+
+   .company__image1{
+    width: max-content;
+}
+    .company__image34{
+        width: max-content;
+    }
+
+    .company__image2{
+        width: max-content;
+    }
+
+    .company__image5{
+        width: max-content;
+    }
+  }
+  
+  @media screen and (max-width: 634px) {
+        .about__info{
+         grid-template-columns: repeat(2, 2fr) ;
+         row-gap: 2.5rem;
+        }
+     
+        .company__image1{
+         width: max-content;
+     }
+         .company__image34{
+             width: max-content;
+         }
+     
+         .company__image5{
+             width: max-content;
+         }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+   .about__info{
+    grid-template-columns: repeat(1, 1fr) ;
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+   }
+
+   .company__image1{
+    width: max-content;
+}
+    .company__image34{
+        width: max-content;
+    }
+
+    .company__image5{
+        width: max-content;
+    }
+  }

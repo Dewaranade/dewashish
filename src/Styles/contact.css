@@ -1,0 +1,53 @@
+.contact__container{
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    display: inline-block;
+}
+
+#contact{
+    background-color: black;
+}
+
+#contactme{
+    color: yellow;
+}
+
+/* .contact__content{
+    grid-template-columns: 116px repat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+} */
+
+/* .contact__buttons{
+
+} */
+
+#cv{
+    height: 50px;
+    width: 210px;
+    background-color: bisque;
+    color: black;
+
+}
+
+#mail{
+    margin-left: 50px;
+    height: 50px;
+    width: 150px;
+    /* background-color: white; */
+    color: black;
+    background-color: beige;
+}
+
+#mail:hover, #cv:hover{
+    color: black;
+    background-color: rgb(229, 255, 177);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+/* .contact__container: hover{
+    border-color: yellow;
+} */
